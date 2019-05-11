@@ -9,6 +9,7 @@ mkdir -p $LIST_DIR
 
 echo '' > tables.txt
 echo '' > desctable.hql
+rm -f $LIST_DIR/*
 
 lines=`hive -S -e 'show tables;'`
 while read line
